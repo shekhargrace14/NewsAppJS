@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- c95a10061acc4b88b577ffa7fca300f6 -->
 </head>
 <body>
     <header>
 
         <div class="container">
-            <div class="row">
+            <div class="row flex">
                 <div class="column logo">
-                    <img src="./assets/logo.png" alt="">
+                    <img src="./assets/logo.png" alt="" class="news-image" id="news-image">
                 </div>
                 <div class="column navigation">
                     <ul >
@@ -21,13 +22,30 @@
                         <a href="#"><li>Home</li></a>
                     </ul>
                 </div>
-                <div class="column">-
-                    <input type="search" placeholder="e.g. IPL">
+                <div class="column search-bar">
+                    <input type="search" class="new-input" placeholder="e.g. IPL">
                     <button>Search</button>
                 </div>
             </div>
         </div>
     </header>
-    
+
+    <main>
+        <div class="cards-container container flex">
+            
+        </div>
+    </main>
+    <template class="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="./assets/logo.png" alt="">
+            </div>
+            <div class="card-content">
+                <h3 id="new-title">This is the Title</h3>
+                <p class="news-source " id="news-source">End Gadget 26</p>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusamus maxime deleniti dolore reiciendis incidunt saepe in tempore inventore harum aliquam cum architecto iusto debitis repellendus, nam illo cumque! Enim atque corporis id aliquid ratione dolore magnam odio voluptas accusantium iusto accusamus asperiores, quisquam facilis mollitia qui laboriosam nobis eligendi?</p>
+            </div>
+        </div>
+    </template>
 </body>
 </html>
