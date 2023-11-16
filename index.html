@@ -13,39 +13,42 @@
         <div class="container">
             <div class="row flex">
                 <div class="column logo">
-                    <img src="./assets/logo.png" alt="" class="news-image" id="news-image">
+                    <a href="#" onclick="reload()">
+                        <img src="./assets/logo.png" alt="" class="news-image" id="news-image">
+                    </a>
                 </div>
                 <div class="column navigation">
                     <ul >
-                        <a href="#"><li>IPL</li></a>
-                        <a href="#"><li>Home</li></a>
-                        <a href="#"><li>Home</li></a>
+                        <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                        <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                        <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">politics</li>
                     </ul>
                 </div>
                 <div class="column search-bar">
-                    <input type="search" class="new-input" placeholder="e.g. IPL">
-                    <button>Search</button>
+                    <input id="search-text" type="text" class="new-input" placeholder="e.g. IPL">
+                    <button id="search-button" class="search-button">Search</button>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="cards-container container flex">
+        <div class="cards-container container flex" id="cards-container">
             
         </div>
     </main>
-    <template class="template-news-card">
+    <template id="template-news-card">
         <div class="card">
             <div class="card-header">
-                <img src="./assets/logo.png" alt="">
+                <img src="./assets/logo.png" alt="" id="news-img">
             </div>
             <div class="card-content">
-                <h3 id="new-title">This is the Title</h3>
+                <h3 id="news-title">This is the Title</h3>
                 <p class="news-source " id="news-source">End Gadget 26</p>
                 <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusamus maxime deleniti dolore reiciendis incidunt saepe in tempore inventore harum aliquam cum architecto iusto debitis repellendus, nam illo cumque! Enim atque corporis id aliquid ratione dolore magnam odio voluptas accusantium iusto accusamus asperiores, quisquam facilis mollitia qui laboriosam nobis eligendi?</p>
             </div>
         </div>
     </template>
+    <script src="./script.js"></script>
 </body>
 </html>
